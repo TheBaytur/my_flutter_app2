@@ -3,6 +3,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'post_model.dart';
 
+// My second app for API checking
 Future<List<Post>> fetchPosts() async {
   try {
     final response = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts')).timeout(const Duration(seconds: 10));
